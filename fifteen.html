@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fifteen Puzzle</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body onload="initializeGame()">
+    <div id="wrapper">
+      <div class="heart"><h1>Fifteen Puzzle</h1> </div>
+    
+        <h3>
+          The objective of the fifteen puzzle is to rearrange its fifteen squares by making successive moves that slide squares into the vacant space. How rapidly can you solve it?
+        </h3>
+        <h2> Select the type of Puzzle from dropdown</h2>
+        <h2> Click Shuffle and Start playing!</h2>
+
+        <span id="win"></span>
+
+        <select id="characters" name="characters" title="Backgrounds" onchange="changeBackground()">
+            <option value="super-mario" id="super-mario">Super Mario</option>
+            <option value="ben10"       id="ben10">Ben10</option>
+            <option value="shinchan"      id="shinchan">shinchan</option>
+            <option value="doraemon"        id="doraemon">Doraemon</option>
+        </select>
+
+        <div id="main">
+            <div id="one"      class="tile">1</div>
+            <div id="two"      class="tile">2</div>
+            <div id="three"    class="tile">3</div>
+            <div id="four"     class="tile">4</div>
+            <div id="five"     class="tile">5</div>
+            <div id="six"      class="tile">6</div>
+            <div id="seven"    class="tile">7</div>
+            <div id="eight"    class="tile">8</div>
+            <div id="nine"     class="tile">9</div>
+            <div id="ten"      class="tile">10</div>
+            <div id="eleven"   class="tile">11</div>
+            <div id="twelve"   class="tile">12</div>
+            <div id="thirteen" class="tile">13</div>
+            <div id="fourteen" class="tile">14</div>
+            <div id="fifteen"  class="tile">15</div>
+            <div id="sixteen"  class="tile"></div>
+        </div>
+
+        <button class="navbar" onclick="shuffleBoard()">Shuffle</button>
+        <p>
+            <a href="http://www.jslint.com/" target="_blank"><img src="jslint.gif" alt="JSLint"/> </a>
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank"><img src="w3c-css.png" alt="W3C CSS" /> </a>
+            <a href="https://validator.w3.org/" target="_blank"><img src="w3c-xhtml.png" alt="W3C XHTML" /> </a>
+        </p>
+    </div>
+
+    <script type="text/javascript" src="fifteen.js"></script>
+</body>
+</html>

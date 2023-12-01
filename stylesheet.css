@@ -1,0 +1,238 @@
+html, body {
+    height: 100%;
+    background-image:linear-gradient(rgba(172, 215, 243, 0.5),rgba(178, 217, 243, 0.5)),url(img1.jpg);
+    height: 1500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h3, h1, h2{
+    color: black;
+    font-weight: bold;
+    font-family: cursive;
+    align-content: center;
+}
+
+.navbar {
+    height: 10%;
+    background-color: transparent;
+    overflow: auto;
+    text-align: center;
+    float:center;
+    list-style: none;
+}
+.navbar{
+   
+    float: center;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: cursive;
+    border: 2px solid black;
+}
+.navbar:hover {
+    background-color:aliceblue;
+    font-size: larger;
+    border: 2px solid black;
+    font-size: larger;
+    font-weight: bold;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: aliceblue;
+    background-image: none;
+    border: 1.5px solid black;
+}
+ 
+.select {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #2C3E50;
+    overflow: hidden;
+    border-radius: .25em;
+}
+ 
+select {
+    width: 20%;
+    height: 5%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: black;
+    cursor: pointer, black;
+    font-weight: bold;
+}
+ 
+select::-ms-expand {
+    display: none;
+}
+.heart {
+	font-size: 150px;
+	color: #e00;
+	animation: beat .25s infinite alternate;
+	transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #34495E;
+    pointer-events: none;
+}
+ 
+.select:hover::after {
+    color: #F39C12;
+}
+h1{
+    font-size: 50px;
+    color: red;
+}
+#wrapper {
+    margin: 5% auto;
+    width: 1000px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#main {
+    margin: auto;
+    width:400px;
+    height:400px;
+    position: relative;
+}
+
+.tile {
+    width:96px;
+    height:96px;
+    float: left;
+    text-align: center;
+    border: 2px black solid;
+    vertical-align: middle;
+    font-size: 32px;
+    font-family: sans-serif;
+    line-height: 100px;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+}
+
+button, select {
+    display: block;
+    margin: 10px auto;
+}
+
+img {
+    height: 30px;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    border:0;
+}
+
+.super-mario { background: url("super-mario.jpg"); }
+.ben10       { background: url("ben10.jpg");       }
+.shinchan      { background: url("shinchan.jpeg");      }
+.doraemon        { background: url("Doremon.jpeg");        }
+
+#one      { background-position: 0      0;      }
+#two      { background-position: -100px 0;      }
+#three    { background-position: -200px 0;      }
+#four     { background-position: -300px 0;      }
+#five     { background-position: 0      -100px; }
+#six      { background-position: -100px -100px; }
+#seven    { background-position: -200px -100px; }
+#eight    { background-position: -300px -100px; }
+#nine     { background-position: 0      -200px; }
+#ten      { background-position: -100px -200px; }
+#eleven   { background-position: -200px -200px; }
+#twelve   { background-position: -300px -200px; }
+#thirteen { background-position: 0      -300px; }
+#fourteen { background-position: -100px -300px; }
+#fifteen  { background-position: -200px -300px; }
+#sixteen  { border: 2px solid white !important; }
+
+.clickable {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.clickable:hover {
+    border-color: red !important;
+    text-decoration: underline !important;
+    color: #006600;
+    cursor: pointer;
+}
+
+#win {
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+#win img {
+    float: none !important;
+    height: 100% !important;
+}
+
+.animate-up {
+    -webkit-transform: translate(0, -100px);
+    -moz-transform: translate(0, -100px);
+    -ms-transform: translate(0, -100px);
+    -o-transform: translate(0, -100px);
+    transform: translate(0, -100px);
+}
+
+.animate-down {
+    -webkit-transform: translate(0, 100px);
+    -moz-transform: translate(0, 100px);
+    -ms-transform: translate(0, 100px);
+    -o-transform: translate(0, 100px);
+    transform: translate(0, 100px);
+}
+
+.animate-left {
+    -webkit-transform: translate(-100px, 0);
+    -moz-transform: translate(-100px, 0);
+    -ms-transform: translate(-100px, 0);
+    -o-transform: translate(-100px, 0);
+    transform: translate(-100px, 0);
+}
+
+.animate-right {
+    -webkit-transform: translate(100px, 0);
+    -moz-transform: translate(100px, 0);
+    -ms-transform: translate(100px, 0);
+    -o-transform: translate(100px, 0);
+    transform: translate(100px, 0);
+}
